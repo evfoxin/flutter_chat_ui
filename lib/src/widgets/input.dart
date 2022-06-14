@@ -130,8 +130,7 @@ class _InputState extends State<Input> {
     final query = MediaQuery.of(context);
     final buttonPadding = InheritedChatTheme.of(context)
         .theme
-        .inputPadding
-        .copyWith(left: 16, right: 16);
+        .inputPadding;
     final safeAreaInsets = kIsWeb
         ? EdgeInsets.zero
         : EdgeInsets.fromLTRB(
